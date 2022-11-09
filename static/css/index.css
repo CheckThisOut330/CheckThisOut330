@@ -1,0 +1,50 @@
+.title {
+    margin: 50px 0 50px 0;
+}
+
+.layout {
+    width: 90%;
+    margin: 30px 5% 0 5%;
+    height: 80%;
+}
+
+.layout_box {
+    display: inline;
+    width: 100%;
+}
+.layout_box #blank {
+    display: block;
+}
+
+.room_box {
+    width: 25%;
+    height: 50%;
+    float: left;
+}
+.room_box .thumbnail {
+    width: 90%;
+    background-color: #000;
+    border-radius: 25px;
+    margin: 10px 0 10px 0;
+}
+
+.room_box .room_title {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    .room_box {
+        width: 50%;
+    }
+    .layout_box #blank {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .room_box {
+        width: 100%;
+    }
+    .layout_box #blank {
+        display: none;
+    }
+}

@@ -40,7 +40,7 @@ class Database():
         count = c.fetchone()
         conn.close()
 
-        # 저장된 데이터 갱신 실패가 30분 이상 경과했을 경우 None 반환
+        # 저장된 데이터 갱신 실패가 30분 이상 경과했을 경우 timeout 반환
         if count is not None:
             if int(count[2]) + 1800 < datetime.datetime.now().timestamp():
                 return "timeout"
