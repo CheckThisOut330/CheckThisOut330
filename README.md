@@ -8,6 +8,9 @@
 * 사람 수에 따라 이미지 교체
 * 깔끔한 디자인
 
+### Screenshot
+![screenshot](images/screenshot.png)
+
 ### To do list
 
 * [x] DB 모듈 개발
