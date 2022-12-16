@@ -6,7 +6,7 @@ from fastapi.templating import Jinja2Templates
 from modules.database import Database
 from modules.model import RoomCount
 
-app = FastAPI()
+app = FastAPI(docs_url="/documentation", redoc_url=None)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
@@ -26,10 +26,6 @@ async def get(request: Request):
 async def root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request,
                                                     "title": "CheckThisOut330"})
-
-@app.get("/docs")
-async def root(request: Request):
-    return
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=8, log_level="info")
