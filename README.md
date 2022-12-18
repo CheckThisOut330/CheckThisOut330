@@ -1,4 +1,10 @@
-# CheckThisOut330 메인 레포
+# CheckThisOut330 메인 웹서버
+
+### 사용법
+
+1. 필요한 모듈 설치
+2. `main.py` 의 맨 마지막 줄 `port=8000` 을 원하는 포트넘버로 변경
+3. [Central_server](https://github.com/CheckThisOut330/Central_server) 세팅
 
 ### 기능
 
