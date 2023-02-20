@@ -32,3 +32,6 @@ result = requests.post("http://0.0.0.0:8000/api/", json={"room": 4, "count": 3})
 result = requests.post("http://0.0.0.0:8000/api/", json={"room": 5, "count": 4})
 result = requests.post("http://0.0.0.0:8000/api/", json={"room": 6, "count": 5})
 ```
+
+### 수상기록
+![prize](images/prize.jpg)
